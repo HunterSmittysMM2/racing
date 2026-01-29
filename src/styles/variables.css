@@ -9,12 +9,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
 
 :root {
-  --primary-color: #3b5b56;
-  --secondary-color: #f3ebd8;
+  --primary-color: #0498d5;
+  --secondary-color: #088ac2;
 
-  --text-on-dark: #eeebe4;
-  --text-on-light: #021b01;
-
+  --text-on-dark: #bcd631;
+  --text-on-light: #1ab369;
+  --background-color: white;
   --heading-font: "Stack Sans Headline", arial, sans-serif;
   --paragraph-font: "Playpen Sans", arial, sans-serif;
 }

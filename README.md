@@ -16,13 +16,11 @@ This is a website for Great Western Racing to list all of their events and give 
 
 ## Page Positions:
 
-**Home Page HTML:** Joshua Walker\
-**Home Page CSS:** Joshua Walker\
-**Events Page HTML:** Graham McClure\
-**Events Page CSS:** Graham McClure\
-**Contact Page HTML:** Hunter Smith\
-**Contact Page CSS:** Hunter Smith\
-**Donation Page HTML:** Eldon McClure
+**Home Page:** Joshua Walker, Brady\
+**Events Page:** Graham McClure, Nathan Sharp\
+**FAQ Page:** Yat, Daniel\
+**About Page:** Kian, Zelda\
+**Donation Page:** Eldon McClure
 
 ## Project Overview: Great Western Racing Overview
 
@@ -69,5 +67,9 @@ Yes.
 - **Who will create or approve content?**
 
 ### 5. Functionality
-
 - Which
+
+#### Names
+- Joshua Walker
+- Zelda Asvitt
+- Yat Lam
