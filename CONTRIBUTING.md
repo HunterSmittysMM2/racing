@@ -3,7 +3,7 @@
 1. Install [git](https://git-scm.com/downloads)
 2. Install [node.js & npm](https://nodejs.org/en/download)
 3. run `npm i`
-4. run `npm start`
+4. Use live server until we get npm start working
 
 ## Contributing Code
 

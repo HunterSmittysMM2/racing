@@ -28,7 +28,7 @@ function navLink({ href, text, isExternal }) {
 
 function header() {
 	return `
-    <img src="images/gwr-emblem.png" alt="Great Western Racing Logo" width=100px />
+    <img src="images/logo.png" alt="Great Western Racing Logo" width=100px />
     <nav>
       ${navLinks.map((link) => navLink(link)).join('')}
     </nav>
