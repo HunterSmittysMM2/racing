@@ -35,3 +35,5 @@ The `.github/deploy.yaml` specifies custom instructions to deploy to github page
 6. `git branch -D <your_name>`
 
 It may be easier to use VS Code's source control extension, and you can easily not have to run `git add`, `git commit`, `git push`, or `git pull`.
+
+Daniel Checketts

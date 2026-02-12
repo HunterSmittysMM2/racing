@@ -1,0 +1,35 @@
+/* contact section */
+.greg-pic img {
+	width: 200px;
+	height: 275px;
+}
+.heidi-pic img {
+	width: 200px;
+	height: 275px;
+}
+.jacob-pic img {
+	width: 200px;
+	height: 275px;
+}
+
+.profile-pic {
+	width: 320px;
+	height: 470px;
+	margin: 10px;
+	border-radius: 30px;
+	background-color: #c79b42;
+}
+.profile-pic img {
+	width: 260px;
+	height: 363px;
+	border-radius: 30px;
+	margin-top: 25px;
+}
+
+/* section */
+.names {
+	font-family: 'Playpen Sans', arial, sans-serif;
+	text-align: center;
+	font-size: 1.4em;
+	display: block;
+}

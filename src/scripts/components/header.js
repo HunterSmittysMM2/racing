@@ -1,7 +1,7 @@
 const navLinks = [
 	{ href: 'index.html', text: 'Home' },
 	{ href: 'events.html', text: 'Events' },
-	{ href: 'info.html', text: 'About Us' },
+	{ href: 'about.html', text: 'About Us' },
 	{ href: 'https://runsignup.com/Race/Register/?raceId=190975', text: 'Sign Up', isExternal: true },
 	{
 		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/RexysChristmasBash',

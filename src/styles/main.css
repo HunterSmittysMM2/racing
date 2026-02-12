@@ -1,0 +1,17 @@
+/* Shared styles for each page */
+
+@import 'shared/variables.css';
+@import 'shared/header.css';
+@import 'shared/footer.css';
+
+body {
+	background-color: var(--primary-color);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #f3ebd8;
+	padding: 20px;
+}

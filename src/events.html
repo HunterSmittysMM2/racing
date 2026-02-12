@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 	<head>
 		<!-- style sheet, icon, stuff here -->
@@ -5,8 +6,9 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="styles/style.css" type="text/css" />
-		<link rel="stylesheet" href="styles/events.css" type="text/css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/pages/events.css" />
+		<script type="module" src="scripts/pages/events/index.js" defer></script>
 		<script type="module" src="./scripts/main.js" defer></script>
 	</head>
 
@@ -17,30 +19,68 @@
 		<!-- Start of unique content -->
 		<div id="hero-container">
 			<h1>Events</h1>
-			<img id="hero" src="images/hero1.png" alt="Events Hero Image" />
+			<img id="event-hero" src="images/event-hero.png" alt="Events Hero Image" />
 		</div>
 		<!-- List of events -->
 		<div id="upcoming-events">
 			<h2>Upcoming Events</h2>
+			<div class="pages-container">
+				<div class="prev-page page">
+					<article class="event-item">
+						<h3>Event item prev</h3>
+						<p>time/place<br />Description of Event</p>
+					</article>
 
-			<div class="events-container">
-				<article class="event-item">
-					<h3>Event item</h3>
-					<p>time/place<br />Description of Event</p>
-				</article>
+					<article class="event-item">
+						<h3>Event item</h3>
 
-				<article class="event-item">
-					<h3>Event item</h3>
+						<p>time/place<br />Description of Event</p>
+					</article>
 
-					<p>time/place<br />Description of Event</p>
-				</article>
+					<article class="event-item">
+						<h3>Event item</h3>
 
-				<article class="event-item">
-					<h3>Event item</h3>
+						<p>time/place<br />Description of Event</p>
+					</article>
+				</div>
+				<div class="current-page page">
+					<article class="event-item">
+						<h3>Event item current</h3>
+						<p>time/place<br />Description of Event</p>
+					</article>
 
-					<p>time/place<br />Description of Event</p>
-				</article>
+					<article class="event-item">
+						<h3>Event item</h3>
+
+						<p>time/place<br />Description of Event</p>
+					</article>
+
+					<article class="event-item">
+						<h3>Event item</h3>
+
+						<p>time/place<br />Description of Event</p>
+					</article>
+				</div>
+				<div class="next-page page">
+					<article class="event-item">
+						<h3>Event item next</h3>
+						<p>time/place<br />Description of Event</p>
+					</article>
+
+					<article class="event-item">
+						<h3>Event item</h3>
+
+						<p>time/place<br />Description of Event</p>
+					</article>
+
+					<article class="event-item">
+						<h3>Event item</h3>
+
+						<p>time/place<br />Description of Event</p>
+					</article>
+				</div>
 			</div>
+			<button class="btn-right" onclick="slideRight()">BUTTON_R</button>
 		</div>
 		<div id="past-events">
 			<h2>Past Events</h2>

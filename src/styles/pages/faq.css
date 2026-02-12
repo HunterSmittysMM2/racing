@@ -1,0 +1,68 @@
+h1 {
+	font-family: var(--heading-font);
+}
+
+/* FAQ Container */
+.faq-questions {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	font-family: system-ui, sans-serif;
+}
+
+/* Each FAQ Item */
+.faq-questions details {
+	border: 1px solid #e2e2e2;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	background: #fafafa;
+}
+
+.faq-questions details[open] {
+	background: #fff;
+	border-color: #ccc;
+	padding: 1rem 1.2rem;
+}
+
+.faq-questions summary {
+	cursor: pointer;
+	font-weight: 600;
+	padding: 1rem 1.2rem;
+	font-size: 1.05rem;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.faq-questions details[open] summary {
+	padding: 0;
+}
+
+.faq-questions summary::-webkit-details-marker {
+	display: none;
+}
+
+/* Custom Arrow */
+.faq-questions summary::after {
+	content: '+';
+	font-size: 1rem;
+	transition: transform 0.3s ease;
+}
+
+.faq-questions details[open] summary::after {
+	content: '-';
+}
+
+/* Answer Text */
+.faq-questions details p {
+	margin: 1rem 0 0;
+	line-height: 1.6;
+	color: #444;
+}
+
+/* Optional Hover Effect */
+.faq-questions summary:hover {
+	color: #0077ff;
+}
