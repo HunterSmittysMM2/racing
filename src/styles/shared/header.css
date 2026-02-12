@@ -23,3 +23,9 @@ nav a {
 h1 {
 	text-align: center;
 }
+
+header a {
+	text-decoration: none;
+	color: #f3ebd8;
+	padding: 20px;
+}
