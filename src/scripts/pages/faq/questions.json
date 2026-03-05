@@ -23,40 +23,43 @@
 		"q": "How can we get in contact if we have more questions?",
 		"a": "Check out our <a href=\"https://paa.ge/greatwesternracing/en\">linktree</a>. We're happy to answer any questions you may still have!"
 	},
+
+
+
 	{
 		"q": "What distances do you offer?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "We currently host 5ks (3.1 miles), Half Marathons (13.1 miles), and a future RunTheUndegrad race consisting of 7 miles"
 	},
 	{
 		"q": "Will there be medals?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "Of course you get a medal. We love that you’re getting out and being active! Every race you will receive a customized medal special to that event."
 	},
 	{
 		"q": "Are there age restrictions?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "Anyone can RunTheUndergrad. However, those who are under the age of 18 must have a legal guardian sign their race waiver, and only those who are undergraduate and graduate students qualify for scholarships except at specified events."
 	},
 	{
 		"q": "Can I walk instead of run?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "RunTheUndergrad’s focus is on getting outside, exercising, and forming a community. If you walk our events and have fun, then you are still a beast in our eyes."
 	},
 	{
 		"q": "What is your refund policy?",
-		"a":"ANSWER TO BE DETERMINED"
+		"a":"RunTheUndergrad does not personally refund tickets unless there is an event cancellation. In order for a participant to secure a refund, they must purchase the event insurance when they sign up for the race."
 	},
 	{
 		"q": "What happens if the weather is bad?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "RunTheUndergrad runs in the rain, snow, sleet, and hail. However, lightning is an issue. If there is lightning in the area that may be potentially harmful to the participants, they are invited to seek shelter and until it clears where the race will continue. If the weather causes an event cancellation, then a refund will not be granted, but a free entry will be offered into our next event."
 	},
 	{
 		"q": "Is there parking available?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "Every race will have parking provided. You can find where you can park in the pre-race information packet emailed to you and on the runsignup.com where you registered for the event."
 	},
 	{
 		"q": "How do I find my race results?",
-		"a": "ANSWER TO BE DETERMINED"
+		"a": "The race results will be emailed to you in a post race I formation packet. There, you can find how well you did, as well as pictures from the event. You might even find some with you in it."
 	},
 	{
 		"q": "What should I bring on race day?",
-		"a":"ANSWER TO BE DETERMINED"
+		"a":"Anything you use to run at your best. Be sure to bring extra clothing and a jacket in case of emergency or cold temperatures. Also bring a light snack that may benefit you while running.  Everything else like water, post-race food, and race day material will be provided in your race packet and at the start line, finish line, and aid stations throughout the course."
 	}
 ]

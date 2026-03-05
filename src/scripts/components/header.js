@@ -21,21 +21,38 @@ function navLink({ href, text, isExternal }) {
 	let link = `<a href="${href}"`;
 	if (isExternal) link += ' target="_blank"';
 	link += `>${text}`;
-	if (isExternal) link += ' <i class="fa-solid fa-up-right-from-square"></i>';
+	if (isExternal) link += '  <i class="fa-solid fa-up-right-from-square fa-xs"></i>';
 	link += '</a>';
 	return link;
 }
 
 function header() {
 	return `
-    <img src="images/logo.png" alt="Great Western Racing Logo" width=100px />
-    <nav>
+    <img src="images/logo.png" alt="Great Western Racing Logo"/>
+    <nav id="nav">
       ${navLinks.map((link) => navLink(link)).join('')}
     </nav>
+	<div>
+		<i id="hamburger" class="hamburger fa-solid fa-bars"></i>
+	</div>
   `;
+}
+
+function toggleMenu() {
+	const hamburger = document.getElementById('hamburger');
+	const nav = document.getElementById('nav');
+	hamburger.addEventListener('click', function () {
+		nav.classList.toggle('show');
+
+		// update accessibility state
+		const isOpen = !nav.classList.contains('show');
+		hamburger.setAttribute('aria-expanded', isOpen);
+	});
 }
 
 export function insertHeader() {
 	const headerElement = header();
 	document.querySelector('header').insertAdjacentHTML('beforeend', headerElement);
+
+	toggleMenu();
 }

@@ -1,10 +1,32 @@
+/* Page-wide basic reset (Feel free to delete if it's breaking things) */
+* {
+	box-sizing: border-box;
+} 
+
 .get-started-block {
 	background-color: #f3ebd8;
 	height: 400px;
 }
-.testimonial-carousel {
+.about-founders-section {
 	background-color: #f3ebd8;
-	height: 250px;
+	height: 400px;
+}
+.about-founders-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: 0 auto;
+	/* place-items: center; */
+	align-items: end;
+}
+.about-founders {
+	grid-row: 1/3;
+	grid-column: 2/3;
+	place-self: end;
+}
+.about-founders img{
+	width: 400px;
+	border-radius: 15px;
 }
 .sponsor-logos {
 	background-color: #f3ebd8;
@@ -34,32 +56,70 @@
 	padding: 80px 40px;
 	text-align: center;
 	height: 80vh;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+/* The Video Layer */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lowest layer */
+    pointer-events: none; /* User clicks "pass through" to the buttons */
 }
 
+.video-background iframe {
+    width: 100vw;
+    height: 56.25vw; /* Maintain 16:9 ratio */
+    min-height: 100%;
+    min-width: 177.77vh; /* Scale to cover area */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dark overlay to make text readable */
+.video-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+    z-index: 2;
+}
 /* Unique background colors for visual separation */
-.carousel-slide:nth-child(1) {
+/* .carousel-slide:nth-child(1) {
 	background-color: #f7e6ff;
 	background-size: cover;
-}
+} */
 .carousel-slide:nth-child(2) {
-	background: url(../images/hero1.jpg);
+	background: url(../../images/hero1.jpg);
 	background-size: cover;
 }
 .carousel-slide:nth-child(3) {
-	background: url(../images/hero2.jpg);
+	background: url(../../images/hero2.jpg);
 	background-size: cover;
 }
 .carousel-slide:nth-child(4) {
-	background: url(../images/hero3.jpg);
+	background: url(../../images/hero3.jpg);
 	background-size: cover;
 }
-
-.slide-content h3 {
-	color: #333;
-	font-size: 2.2em;
-	margin-bottom: 15px;
+.slide-content {
+	position: relative;
+	z-index: 3;
+	grid-row: 2/3;
+	max-width: 250px;
+	background-color: white;
+	border-radius: 10px;
 }
-
 .slide-content p {
 	color: #555;
 	margin-bottom: 35px;
@@ -182,3 +242,33 @@
 	max-height: 90vh;
 	overflow: auto;
 }
+
+.section-header {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold; 
+}
+
+/* --- Sponsor Logos --- */
+#sponsor-grid {
+	display: grid;
+	width: 80vw;
+	margin: auto;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+}
+
+.sponsor-img-link {
+	width: 100%;
+	aspect-ratio: 1/1;
+	padding: 0;
+}
+
+.sponsor-img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+

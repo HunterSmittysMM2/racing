@@ -17,8 +17,23 @@
 	height: 470px;
 	margin: 10px;
 	border-radius: 30px;
-	background-color: #c79b42;
+	background-color: #1ab369;
 }
+
+.profile-card {
+  box-shadow: 5px 5px 10px #6f7364;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-family: arial;
+  background: #bcd631;
+  border-radius: 30px;
+}
+
 .profile-pic img {
 	width: 260px;
 	height: 363px;

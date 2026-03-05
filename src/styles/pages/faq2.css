@@ -1,0 +1,38 @@
+/* FAQ Page */
+.faq-main {
+	color: white;
+	font-weight: 600;
+}
+
+.faq-header {
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1;
+	margin-block: calc(0.25rem * 5);
+}
+#faq-questions {
+	max-width: calc(7 / 10 * 100%);
+	margin-block: calc(0.25rem * 5);
+	margin-inline: auto;
+}
+
+/* Questions */
+.faq-detail {
+	border-bottom: 1px solid lightgray;
+	max-height: 100%;
+}
+
+.faq-detail summary {
+	display: flex;
+	padding: calc(0.25rem * 4);
+	cursor: pointer;
+	justify-content: space-between;
+
+	&:hover {
+		color: lightgray;
+	}
+}
+
+.faq-detail div {
+	margin: calc(0.25rem * 5);
+}

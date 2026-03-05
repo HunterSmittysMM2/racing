@@ -23,25 +23,26 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="stylesheet" href="styles/pages/faq.css" />
 		<title>Undergrad Racing | FAQ</title>
-		<script type="module" src="./scripts/pages/faq/index.js" defer></script>
 		<script type="module" src="./scripts/main.js" defer></script>
+
+		<script type="module" src="./scripts/pages/faq/faq2.js" defer></script>
+		<link rel="stylesheet" href="styles/pages/faq2.css" />
 	</head>
 	<body>
 		<header>
 			<!-- Header inserts dynamically -->
 		</header>
-		<main>
-			<h1>FAQ</h1>
+		<main class="faq-main">
+			<h1 class="faq-header">FAQ</h1>
 			<section class="faq-filters">
 				<div class="searchbar"></div>
 				<ul class="preselected-filters">
 					<!-- topics -->
 				</ul>
 			</section>
-			<section class="faq-questions">
-				<!-- generate via Javascript -->
+			<section id="faq-questions">
+				<!-- generate via JavaScript -->
 			</section>
 			<section class="other-questions">
 				<!-- Add links to contact page -->
