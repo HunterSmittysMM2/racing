@@ -23,7 +23,8 @@ This is a website for Great Western Racing to list all of their events and give 
 **Manager:** Alex\
 **Home Page:** Joshua Walker, Brady, Sam\
 **Events Page:** Graham McClure, Nathan Sharp\
-**FAQ Page:** Yat, Daniel, Eldon\
+**FAQ Page:** Yat, Daniel\
+**Gallery** Eldon\
 **About Page:** Kian, Zelda, Laurin\
 **Header/Footer Section:** Hunter, Nephi
 

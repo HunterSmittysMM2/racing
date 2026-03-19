@@ -1,3 +1,4 @@
+
 #upcoming-events{
 	position: relative; /*required for left/right buttons' absolute positioning*/
 	margin: 40px 0;
@@ -15,6 +16,7 @@
 	margin-left: 10px;
 	font-size: 40px;
 	color: var(--text-on-dark);
+	text-shadow: 3px 3px 2px #4774a2;
 }
 
 /* Event items */
@@ -96,6 +98,7 @@
 	grid-column: 2 / 3;
 	z-index: 2;
 	color: white;
+	text-shadow: 0px 0px 12px black;
 }
 
 #hero {
@@ -123,7 +126,7 @@
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	height: 300px;
+	height: 318px;
 }
 
 .item-box{

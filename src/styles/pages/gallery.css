@@ -1,7 +1,12 @@
+
+
 body {
-    background-color: beige;
-    border-left: 70px solid navy;
-    border-right: 70px solid navy;
+    width: auto;
+    background-color: #0498d5;
+}
+
+#main-column {
+    background-color: antiquewhite;
 }
 
 #gallery-box {
@@ -14,12 +19,11 @@ body {
 
 .gallery-photo {
     width: 100%;
-    height:auto;
+    height: auto;
     margin: 10px;
     border:5px solid black;
 }
 
-#gallery-heading {
-    margin:auto;
-    text-align: center;
+h1 {
+    padding-top: 20px;
 }

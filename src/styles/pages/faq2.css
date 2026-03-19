@@ -36,3 +36,8 @@
 .faq-detail div {
 	margin: calc(0.25rem * 5);
 }
+
+@keyframes {
+	from {
+	}
+}
