@@ -1,27 +1,66 @@
+// import carousel data
+//import data from "./events_info.json" assert {type: 'json'};
+var slide_data = [];
+
+// returns a promise; make sure to handle it with a .then().
+async function importData() {
+    const response = await fetch('./scripts/pages/events/events_info.json');
+    const data = await response.json();
+    return data; // Return the data after it has been fetched
+}
+
+function splitIntoSublists(arr, perSplice) {
+	// chatgpt code
+	var result = [];
+	var sublist = [];
+	var tri_count = 1
+	var i = 0;
+	while (i < arr.length) {
+		sublist.push(arr[i]);
+		i++
+		if (tri_count < perSplice) {
+			tri_count++
+		} else {
+			/// if just added last item of current sublist
+			tri_count = 1;
+			result.push(sublist.copyWithin());
+			sublist = [];
+			if (i+perSplice >= arr.length) {
+				for (let j = i; j<arr.length; j++) {
+					sublist.push(arr[j]);
+				}
+				result.push(sublist.copyWithin());
+				break;
+			}
+		}
+	}
+	return result;
+}
+
 function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-current_page = 0;
-slide_data = [
-    [    // page 1
-        {"name":"test_event_0", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_1", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_2", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
-    ], [ // page 2                                  
-        {"name":"test_event_3", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_4", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_5", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
-    ], [ // page 3                                  
-        {"name":"test_event_6", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_7", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_8", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
-    ], [ // page 4                                  
-        {"name":"test_event_9", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
-        {"name":"test_event_10", "date":"0/1/1234", "content":"This is a description of the event or announcement."},
-        {"name":"test_event_11", "date":"0/1/1234", "content":"This is a description of the event or announcement."}
-    ]
-]
+// slide_data = [
+//     [    // page 1
+//         {"name":"test_event_0", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_1", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_2", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
+//     ], [ // page 2                                  
+//         {"name":"test_event_3", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_4", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_5", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
+//     ], [ // page 3                                  
+//         {"name":"test_event_6", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_7", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_8", "date":"0/1/1234",  "content":"This is a description of the event or announcement."}
+//     ], [ // page 4                                  
+//         {"name":"test_event_9", "date":"0/1/1234",  "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_10", "date":"0/1/1234", "content":"This is a description of the event or announcement."},
+//         {"name":"test_event_11", "date":"0/1/1234", "content":"This is a description of the event or announcement."}
+//     ]
+// ] 
+
 // directions
 const NEXT = 1;
 const PREV = -1;
@@ -56,7 +95,7 @@ function populateNode(node, pageIdx) {
     for (let itemIdx = 0; itemIdx < page.length; itemIdx++) {
         let item = page[itemIdx];
         
-        // create article and add content
+        // create article and add content with specified structure.
         let item_html = '<article class="event-item item-box">'
             + `<h2>${item['name']}</h2>`
             + `<p class="event-time">${item["date"]}</p>`
@@ -169,4 +208,17 @@ function initPages() {
 	populateNode(next, getNextPageIdx(1));
 }
 
-initPages();
+var current_page = 0; // initialize starting page idx
+async function main() {
+
+	// get data from json
+	let all_data = [];
+	await importData().then(data => all_data = data);
+	
+	// parse
+	let all_arr = Object.values(all_data)[0] // unnest 
+	slide_data = splitIntoSublists(all_arr, 3);
+
+	initPages();
+}
+main();
