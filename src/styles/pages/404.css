@@ -1,0 +1,27 @@
+
+main {
+    padding: 10vh;
+    color: #f3ebd8;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 60px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    display: inline;
+    font-size: 32px;
+}
+
+.emph {
+    /* color: #7dd7fd; */
+    color: #bcd631;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}

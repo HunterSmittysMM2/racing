@@ -18,15 +18,15 @@ nav {
 nav a {
 	padding: 20px 10px;
 	font-size: 1.5em;
-	text-align: center;
 	color: var(--text-on-light);
+	font-family: var(--heading-font);
 }
+
 h1 {
 	text-align: center;
 }
 
 .hamburger {
-	font-size: 1.4em;
 	color: var(--text-on-light);
 	cursor: pointer;
 	display: none;
@@ -46,15 +46,6 @@ h1 {
 	}
 
 	nav {
-		display: none;
-	}
-
-	.hamburger {
-		display: block;
-	}
-
-	.show {
-		display: block;
 		position: absolute;
 		top: 122px;
 		left: 0;
@@ -63,11 +54,38 @@ h1 {
 		flex-direction: column;
 		z-index: 999;
 		background-color: var(--background-color);
-	}
-}
 
-@media screen and (max-width: 700px) {
-	header img {
-		width: 90px;
+		/* hidden state */
+		opacity: 0;
+		transform: translateY(-10px);
+		visibility: hidden;
+		pointer-events: none;
+
+		transition:
+			opacity 0.25s ease,
+			transform 0.25s ease,
+			visibility 0.25s ease;
+	}
+
+	nav a {
+		padding: 0.8rem 3rem;
+		font-size: 1.25rem;
+	}
+
+	nav a:hover {
+		background-color: var(--text-on-light);
+		color: white;
+		transition: 0.3s ease;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	nav.show {
+		opacity: 1;
+		transform: translateY(0);
+		visibility: visible;
+		pointer-events: auto;
 	}
 }

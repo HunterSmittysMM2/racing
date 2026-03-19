@@ -14,4 +14,13 @@ a {
 	text-decoration: none;
 	color: #f3ebd8;
 	padding: 20px;
+	font-family:  var(--paragraph-font);
+}
+
+h1, h2, h3, span{
+	font-family: var(--heading-font);
+}
+
+p{
+	font-family:  var(--paragraph-font);
 }

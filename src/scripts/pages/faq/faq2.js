@@ -27,6 +27,19 @@ async function generateFaq() {
     				</details>`;
 			})
 			.join('');
+
+		const collapseQuestions = document.querySelector('#collapse-questions');
+		collapseQuestions.addEventListener('click', () => {
+			console.log('run')
+			document.querySelectorAll('.faq-detail').forEach((detail) => {
+				console.log('run')
+				if (detail.open) {
+					detail.open = false
+				} else {
+					detail.open = true
+				}
+			});
+		});
 	} catch (error) {
 		console.log('There was an error:', error);
 	}
@@ -42,6 +55,7 @@ questionsContainer.addEventListener('click', (event) => {
 			}
 		});
 });
+
 
 (async function () {
 	await generateFaq();
