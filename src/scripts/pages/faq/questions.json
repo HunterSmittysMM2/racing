@@ -1,65 +1,80 @@
 [
 	{
 		"q": "How can I volunteer?",
-		"a": "You can sign up to volunteer similar to signing up for a race, through runsignup.com!"
+		"a": "You can sign up to volunteer similar to signing up for a race, through runsignup.com!",
+		"tag": "registration"
 	},
 	{
 		"q": "What supplies are given at races?",
-		"a": "We have volunteers at drink stations to help you stay hydrated during the race. We'll also have CNAs available to help if there are unexpected events."
+		"a": "We have volunteers at drink stations to help you stay hydrated during the race. We'll also have CNAs available to help if there are unexpected events.",
+		"tag": "event_details"
 	},
 	{
 		"q": "Will you ever do free races?",
-		"a": "In the future we want to consider doing free races. These will likely be 5k races."
+		"a": "In the future we want to consider doing free races. These will likely be 5k races.",
+		"tag": "policies"
 	},
 	{
 		"q": "How do I sign up for races?",
-		"a": "We do registration through runsignup.com. You'll need to create a free account and then sign up for a race of your choice."
+		"a": "We do registration through runsignup.com. You'll need to create a free account and then sign up for a race of your choice.",
+		"tag": "registration"
 	},
 	{
 		"q": "How can we see the maps?",
-		"a": "The maps are available on runsignup.com. Right click to open the image in a new tab if you'd like to zoom in."
+		"a": "The maps are available on runsignup.com. Right click to open the image in a new tab if you'd like to zoom in.",
+		"tag": "logistics"
 	},
 	{
 		"q": "How can we get in contact if we have more questions?",
-		"a": "Check out our <a href=\"https://paa.ge/greatwesternracing/en\">linktree</a>. We're happy to answer any questions you may still have!"
+		"a": "Check out our <a href=\"https://paa.ge/greatwesternracing/en\">linktree</a>. We're happy to answer any questions you may still have!",
+		"tag": "contact"
 	},
 
 
 
 	{
 		"q": "What distances do you offer?",
-		"a": "We currently host 5ks (3.1 miles), Half Marathons (13.1 miles), and a future RunTheUndegrad race consisting of 7 miles"
+		"a": "We currently host 5ks (3.1 miles), Half Marathons (13.1 miles), and a future RunTheUndegrad race consisting of 7 miles",
+		"tag": "event_details"
 	},
 	{
 		"q": "Will there be medals?",
-		"a": "Of course you get a medal. We love that you’re getting out and being active! Every race you will receive a customized medal special to that event."
+		"a": "Of course you get a medal. We love that you’re getting out and being active! Every race you will receive a customized medal special to that event.",
+		"tag": "event_details"
 	},
 	{
 		"q": "Are there age restrictions?",
-		"a": "Anyone can RunTheUndergrad. However, those who are under the age of 18 must have a legal guardian sign their race waiver, and only those who are undergraduate and graduate students qualify for scholarships except at specified events."
+		"a": "Anyone can RunTheUndergrad. However, those who are under the age of 18 must have a legal guardian sign their race waiver, and only those who are undergraduate and graduate students qualify for scholarships except at specified events.",
+		"tag": "policies"
 	},
 	{
 		"q": "Can I walk instead of run?",
-		"a": "RunTheUndergrad’s focus is on getting outside, exercising, and forming a community. If you walk our events and have fun, then you are still a beast in our eyes."
+		"a": "RunTheUndergrad’s focus is on getting outside, exercising, and forming a community. If you walk our events and have fun, then you are still a beast in our eyes.",
+		"tag": "policies"
 	},
 	{
 		"q": "What is your refund policy?",
-		"a":"RunTheUndergrad does not personally refund tickets unless there is an event cancellation. In order for a participant to secure a refund, they must purchase the event insurance when they sign up for the race."
+		"a":"RunTheUndergrad does not personally refund tickets unless there is an event cancellation. In order for a participant to secure a refund, they must purchase the event insurance when they sign up for the race.",
+		"tag": "policies"
 	},
 	{
 		"q": "What happens if the weather is bad?",
-		"a": "RunTheUndergrad runs in the rain, snow, sleet, and hail. However, lightning is an issue. If there is lightning in the area that may be potentially harmful to the participants, they are invited to seek shelter and until it clears where the race will continue. If the weather causes an event cancellation, then a refund will not be granted, but a free entry will be offered into our next event."
+		"a": "RunTheUndergrad runs in the rain, snow, sleet, and hail. However, lightning is an issue. If there is lightning in the area that may be potentially harmful to the participants, they are invited to seek shelter and until it clears where the race will continue. If the weather causes an event cancellation, then a refund will not be granted, but a free entry will be offered into our next event.",
+		"tag": "policies"
 	},
 	{
 		"q": "Is there parking available?",
-		"a": "Every race will have parking provided. You can find where you can park in the pre-race information packet emailed to you and on the runsignup.com where you registered for the event."
+		"a": "Every race will have parking provided. You can find where you can park in the pre-race information packet emailed to you and on the runsignup.com where you registered for the event.",
+		"tag": "logistics"
 	},
 	{
 		"q": "How do I find my race results?",
-		"a": "The race results will be emailed to you in a post race information packet. There, you can find how well you did, as well as pictures from the event. You might even find some with you in it."
+		"a": "The race results will be emailed to you in a post race information packet. There, you can find how well you did, as well as pictures from the event. You might even find some with you in it.",
+		"tag": "registration"
 	},
 	{
 		"q": "What should I bring on race day?",
-		"a":"Anything you use to run at your best. Be sure to bring extra clothing and a jacket in case of emergency or cold temperatures. Also bring a light snack that may benefit you while running.  Everything else like water, post-race food, and race day material will be provided in your race packet and at the start line, finish line, and aid stations throughout the course."
+		"a":"Anything you use to run at your best. Be sure to bring extra clothing and a jacket in case of emergency or cold temperatures. Also bring a light snack that may benefit you while running.  Everything else like water, post-race food, and race day material will be provided in your race packet and at the start line, finish line, and aid stations throughout the course.",
+		"tag": "event_details"
 	}
 ]
