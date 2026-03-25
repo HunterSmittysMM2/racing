@@ -3,6 +3,18 @@
 	box-sizing: border-box;
 } 
 
+.motto {
+	text-align: center;
+	font-size: clamp(2.2rem, 2vw, 1.8rem);
+	font-weight: 600;
+	color: white;
+	margin: 50px 0;
+	padding: 0 20px;
+	line-height: 1.6;
+	letter-spacing: 0.3px;
+	font-family: var(--heading-font);
+}
+
 .get-started-block {
 	display: flex;
     flex-direction: column;

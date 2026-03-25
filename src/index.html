@@ -3,21 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="title" content="Great Western Racing" />
+		<meta name="title" content="UnderGrad" />
 		<meta
 			name="description"
 			content="We run - by students, for students, with students. Join us for weekly runs, monthly activities, and racing events with rewards."
 		/>
-		<meta property="og:title" content="Great Western Racing" />
+		<meta property="og:title" content="UnderGrad" />
 		<meta property="og:description" content="We run - by students, for students, with students." />
 		<!-- TODO - After the site starts using a domain, update these two links -->
 		<meta
 			property="og:image"
-			content="https://web-design-development-society.github.io/racing/images/logo.png"
+			content="https://web-design-development-society.github.io/racing/images/ug.png"
 		/>
 		<meta property="og:url" content="https://web-design-development-society.github.io/racing" />
 		<meta property="og:type" content="website" />
-		<link rel="icon" href="./images/favicon.png" type="image/png" />
+		<link rel="icon" href="./images/ug.png" type="image/png" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -26,7 +26,8 @@
 		<link rel="stylesheet" href="./styles/pages/home.css" />
 		<script type="module" src="./scripts/main.js" defer></script>
 		<script type="module" src="./scripts/pages/home/index.js" defer></script>
-		<title>Great Western Racing</title>
+		<script type="module" src="./scripts/components/footer.js" defer></script>
+		<title>UnderGrad - Home</title>
 	</head>
 	<body>
 		<header>
@@ -35,47 +36,50 @@
 		<main>
 			<div class="carousel-container">
 				<div class="carousel-track">
-					<div class="carousel-slide">
+					<div class="carousel-slide video-slide">
+						<div class="video-background">
+							<iframe
+								src="https://www.youtube.com/embed/y2VQD7ZZ85M?autoplay=1&mute=1&loop=1&playlist=y2VQD7ZZ85M&controls=0&modestbranding=1&rel=0&iv_load_policy=3"
+								frameborder="0"
+								allow="autoplay; encrypted-media"
+							>
+							</iframe>
+						</div>
 						<div class="slide-content">
-							<h3>Design Services</h3>
-							<p>
-								Need a modern, responsive website? Our team delivers beautiful and functional
-								designs. Click below to view our portfolio.
-							</p>
-							<a href="#design" class="cta-button">View Portfolio</a>
+							<h3>Race Day Starts Here</h3>
+							<p>Check the next event, register your spot, and hit the starting line with us.</p>
+							<a href="./events.html" class="card-btn">View Events</a>
 						</div>
 					</div>
 
 					<div class="carousel-slide">
 						<div class="slide-content">
-							<h3>Development Solutions</h3>
+							<h3>Who We Run For</h3>
 							<p>
-								We build robust web applications using the latest JavaScript frameworks and powerful
-								back-end technologies.
+								Built by students and powered by community, Undergrad helps runners train,
+								compete, and grow together.
 							</p>
-							<a href="#dev" class="cta-button">Start a Project</a>
+							<a href="./about.html" class="card-btn">Meet The Team</a>
 						</div>
 					</div>
 
 					<div class="carousel-slide">
 						<div class="slide-content">
-							<h3>SEO & Marketing</h3>
+							<h3>Moments From The Course</h3>
 							<p>
-								Increase your visibility and traffic. We help you rank higher and connect with your
-								audience for massive growth.
+								From finish-line celebrations to team training nights, see what race season looks like.
 							</p>
-							<a href="#seo" class="cta-button">Get a Quote</a>
+							<a href="./gallery.html" class="card-btn">Open Gallery</a>
 						</div>
 					</div>
 
 					<div class="carousel-slide">
 						<div class="slide-content">
-							<h3>Development Solutions</h3>
+							<h3>Help Students Keep Racing</h3>
 							<p>
-								We build robust web applications using the latest JavaScript frameworks and powerful
-								back-end technologies.
+								Your support helps with race fees, team gear, and opportunities for new runners.
 							</p>
-							<a href="#dev" class="cta-button">Start a Project</a>
+							<a href="https://runsignup.com/Race/Donate/ID/Rexburg/UndergradSpring2026" class="card-btn" target="_blank">Support The Team</a>
 						</div>
 					</div>
 				</div>
@@ -85,27 +89,91 @@
 				<button class="prev-button">&lt;</button>
 				<button class="next-button">&gt;</button>
 			</div>
-			<p>We run -- by students, for students, with students</p>
-			<section class="get-started-block">Get Started</section>
-			<section class="testimonial-carousel">What our runners are saying...</section>
+			<p class="motto">We run — by students, for students, with students</p>
+			<section class="get-started-block">
+				<h2>Get Started</h2>
+				<div class="card-container option-blue">
+					<img
+						src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800"
+						alt="Runner"
+						class="card-image"
+					/>
+					<div class="card-content">
+						<h3 class="card-title">Blue Plan: Private</h3>
+						<p class="card-description">
+							Get dedicated 1-on-1 coaching with a fixed monthly schedule. Perfect for athletes
+							looking for consistent, professional growth.
+						</p>
+						<a href="#" class="card-btn">Enroll Now</a>
+					</div>
+				</div>
+			</section>
+			<section class="about-founders-section">
+				<div class="about-founders-div">
+					<div class="about-description">
+						<h2>Built by Students, Driven by Community</h2>
+						<p>
+							Undergrad started with a simple goal: create a welcoming team where
+							students can train, race, and grow together. What began as a few runners meeting
+							after class has become a full community of athletes, volunteers, and mentors.
+						</p>
+					</div>
+					<div class="about-founders">
+						<img src="./images/founders_home.jpg" alt="Undergrad founders" />
+					</div>
+					<div class="about-button"><a href="./about.html" class="cta-button">Read Our Story</a></div>
+				</div>
+			</section>
 			<section class="sponsor-logos">
-				<img src="images/BYUI Alumni Logo.png" alt="BYUI alumni logo" />
+				<h2 class="section-header" id="sponsors-header">Our Sponsors</h2>
+				<div id="sponsor-grid">
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/400/300" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/100" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/410" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/400/225" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/500" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/460/320" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/320/480" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/480" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/270" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/114" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/800" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/1600/900" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/240/360" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+				</div>
 			</section>
 		</main>
 
 		<!-- Add divs for advertisement images -->
 
 		<footer>
-			<div>
-				<h3>Contact Us</h3>
-				<ul>
-					<div class="footer-info">
-						<li>Phone: 801-888-0330</li>
-						<li>Email: GreatWesternRacing@gmail.com</li>
-						<li>Instagram: <a href="https://www.instagram.com/runtheundergrad?igsh=MWRzejI1dWYzZjFl&utm_source=qr">@runtheundergrad</a></li>
-					</div>
-				</ul>
-			</div>
+			<!-- Footer inserts dynamically -->
 		</footer>
 		<div class="popup-overlay">
 			<div class="popup-content">
